@@ -52,4 +52,10 @@ public class EmployeeController {
 		service.delete(id);
 		return Map.of("message", "Employee deleted successfully", "id", id);
 	}
+
+	@GetMapping("/testing")
+	public String test() {
+		return "test";
+	}
+
 }
