@@ -58,4 +58,8 @@ public class EmployeeController {
 		return "test";
 	}
 
+	@GetMapping("/dev")
+	public String dev() {
+		return "dev branch";
+	}
 }
